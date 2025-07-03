@@ -1,0 +1,120 @@
+/* 추가적인 커스텀 스타일 */
+
+/* 부드러운 스크롤 효과 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 호버 효과 개선 */
+.hover-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* 그라디언트 배경 */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 네비게이션 배경 투명도 */
+.nav-scroll {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* 버튼 호버 효과 */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 카드 그림자 효과 */
+.card-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 모바일 메뉴 슬라이드 효과 */
+.mobile-menu-enter {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.mobile-menu-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* 반응형 텍스트 크기 조정 */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+}
+
+/* 로딩 애니메이션 */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    animation: pulse 2s infinite;
+}
+
+/* 커스텀 포커스 스타일 */
+.focus-visible:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
